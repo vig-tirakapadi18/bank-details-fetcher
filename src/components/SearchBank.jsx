@@ -5,7 +5,8 @@ const SearchInput = () => {
   const [ifscCode, setIfscCode] = useState("");
   const [bankDetails, setBankDetails] = useState("");
 
-  const clickHandler = async () => {
+  const clickHandler = async (event) => {
+    event.preventDefault();
     const bankNameResponse = await fetch(
       `https://ifsc.razorpay.com/${ifscCode}`
     );
