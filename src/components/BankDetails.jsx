@@ -4,9 +4,7 @@ const BankDetails = (props) => {
   console.log(props.bankDetails.BANK);
   const { BANK, BRANCH, ADDRESS, STATE, CONTACT } = props.bankDetails;
   return (
-    <div
-      className={props.bankDetails ? "bank-details" : ""}
-      key={props.bankDetails.IFSC}>
+    <div className={props.bankDetails ? "bank-details" : ""}>
       {props.bankDetails && (
         <Fragment>
           <h2>

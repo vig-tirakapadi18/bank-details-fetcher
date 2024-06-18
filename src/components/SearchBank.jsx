@@ -30,6 +30,11 @@ const SearchInput = () => {
         bankDetails={bankDetails}
         ifscCode={ifscCode}
       />
+      {ifscCode.length > 0 && ifscCode.length < 11 && (
+        <p className="error-text">
+          Please enter a valid IFSC Code(Must be 11 digits)!
+        </p>
+      )}
     </>
   );
 };
