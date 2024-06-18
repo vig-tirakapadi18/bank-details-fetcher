@@ -1,0 +1,76 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #0f172a;
+}
+
+.ifsc-input {
+  height: 30vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.ifsc-input input {
+  width: 60%;
+  border: none;
+  outline: none;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.ifsc-input button {
+  width: 30%;
+  padding: 7px;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 5px;
+  background-color: dodgerblue;
+  color: white;
+  cursor: pointer;
+  transition: transform 0.25s ease-in-out;
+}
+
+.ifsc-input button:hover {
+  opacity: 0.95;
+}
+
+.ifsc-input button:active {
+  transform: scale(0.95);
+}
+
+.bank-details {
+  height: 30vh;
+  background-color: rgba(255, 255, 255, 0.75);
+  margin-inline: 25%;
+  padding: 1rem;
+  border-radius: 1rem;
+}
+
+.bank-details h2 {
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+}
+
+.bank-details h2 span {
+  background-color: #0f172a;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 10px;
+}
+
+.bank-details h2 {
+  text-align: center;
+}
+
+.bank-details div span {
+  font-weight: bold;
+}
